@@ -2,13 +2,41 @@
 adpro stuff
 
 ## GUI and CLI log screenshots
-> i kept them in src/main/resources/image
+### GUI /all-student
+![viewResultInTable.png](src/main/resources/static/image/GUI/test_plan_1/viewResultInTable.png)
+### GUI /all-student-name
+![viewResultInTable.png](src/main/resources/static/image/GUI/test_plan_2/viewResultInTable.png)
+### GUI /highest-gpa
+![viewResultsInTable.png](src/main/resources/static/image/GUI/test_plan_3/viewResultsInTable.png)
+### CLI /all-student log
+![test_result_1_log.png](src/main/resources/static/image/CLI/test_result_1_log.png)
+### CLI /all-student-name log
+![test_result_2_log.png](src/main/resources/static/image/CLI/test_result_2_log.png)
+### CLI /highest-gpa log
+![test_result_3_log.png](src/main/resources/static/image/CLI/test_result_3_log.png)
 
 ## Improvements after optimization
 > i saw quite a large change. for example, in the findStudentWithHighestGpa function, 
-> he elapsed time was mostly in the 800 ms but after that most dropped to the double digits. Same with
+> the elapsed time was mostly in the 800 ms but after that most dropped to the double digits. Same with
 > joinStudentNames. I seem to vaguely remember this problem getting mentioned in class. anyway, 
-> the elapsed time reduced from some 20000 ms all the way down to around 1000
+> the elapsed time reduced from some 20000 ms all the way down to around 1000. for details :
+> ### /all-student
+>> Before
+>> ![test_result_1_log.png](src/main/resources/static/image/CLI/test_result_1_log.png)
+>> After 
+>> ![test_result_1_optimized.png](src/main/resources/static/image/optimized/test_result_1_optimized.png)
+> 
+> ### /all-student-name
+>> Before
+>> ![test_result_2_log.png](src/main/resources/static/image/CLI/test_result_2_log.png)
+>> After
+>> ![test_result_2_optimized.png](src/main/resources/static/image/optimized/test_result_2_optimized.png)
+> 
+> ### /highest-gpa
+>> Before
+>> ![test_result_3_log.png](src/main/resources/static/image/CLI/test_result_3_log.png)
+>> After
+>> ![test_result_3_optimized.png](src/main/resources/static/image/optimized/test_result_3_optimized.png)
 
 ## Reflection
 > 1. While performing tests with jmeter, things like latency and throughput while with
